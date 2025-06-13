@@ -1,0 +1,15 @@
+{"time":"2025-06-12T11:28:13.83619416+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/wandb/run-20250612_112813-k0ojefiv/logs/debug-core.log"}
+{"time":"2025-06-12T11:28:14.143741218+09:00","level":"INFO","msg":"stream: created new stream","id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:14.143786609+09:00","level":"INFO","msg":"stream: started","id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:14.143871216+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:14.143995681+09:00","level":"INFO","msg":"handler: started","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:14.144013228+09:00","level":"INFO","msg":"sender: started","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:14.471045129+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-12T11:28:20.78863396+09:00","level":"INFO","msg":"stream: closing","id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:20.78864724+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-12T11:28:20.788759013+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-12T11:28:21.470023884+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-12T11:28:21.795744112+09:00","level":"INFO","msg":"handler: closed","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:21.795753386+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:21.795777812+09:00","level":"INFO","msg":"sender: closed","stream_id":"k0ojefiv"}
+{"time":"2025-06-12T11:28:21.795780347+09:00","level":"INFO","msg":"stream: closed","id":"k0ojefiv"}

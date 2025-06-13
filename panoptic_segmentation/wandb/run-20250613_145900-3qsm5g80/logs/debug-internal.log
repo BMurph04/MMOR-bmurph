@@ -1,0 +1,15 @@
+{"time":"2025-06-13T14:59:01.12002331+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/connecteve/intern-brendon/MMOR-all/panoptic_segmentation/wandb/run-20250613_145900-3qsm5g80/logs/debug-core.log"}
+{"time":"2025-06-13T14:59:01.468245007+09:00","level":"INFO","msg":"stream: created new stream","id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:01.468263108+09:00","level":"INFO","msg":"stream: started","id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:01.468302602+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:01.468372984+09:00","level":"INFO","msg":"sender: started","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:01.468378985+09:00","level":"INFO","msg":"handler: started","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:01.728919186+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T14:59:09.086762235+09:00","level":"INFO","msg":"stream: closing","id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:09.086780497+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T14:59:09.086830235+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T14:59:09.736852541+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T14:59:10.028543662+09:00","level":"INFO","msg":"handler: closed","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:10.028561823+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:10.028588748+09:00","level":"INFO","msg":"sender: closed","stream_id":"3qsm5g80"}
+{"time":"2025-06-13T14:59:10.028605181+09:00","level":"INFO","msg":"stream: closed","id":"3qsm5g80"}

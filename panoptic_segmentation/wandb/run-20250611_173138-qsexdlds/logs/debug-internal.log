@@ -1,0 +1,7 @@
+{"time":"2025-06-11T17:31:38.458709309+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/wandb/run-20250611_173138-qsexdlds/logs/debug-core.log"}
+{"time":"2025-06-11T17:31:38.758279752+09:00","level":"INFO","msg":"stream: created new stream","id":"qsexdlds"}
+{"time":"2025-06-11T17:31:38.758291537+09:00","level":"INFO","msg":"stream: started","id":"qsexdlds"}
+{"time":"2025-06-11T17:31:38.758302956+09:00","level":"INFO","msg":"handler: started","stream_id":"qsexdlds"}
+{"time":"2025-06-11T17:31:38.758322826+09:00","level":"INFO","msg":"sender: started","stream_id":"qsexdlds"}
+{"time":"2025-06-11T17:31:38.758332079+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"qsexdlds"}
+{"time":"2025-06-11T17:31:39.057715098+09:00","level":"INFO","msg":"Starting system monitor"}

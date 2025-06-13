@@ -1,0 +1,27 @@
+Frequency file exists. Using weights from frequency file
+Using no loss weighting...
+Traceback (most recent call last):
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py", line 414, in <module>
+    main(args)
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py", line 406, in main
+    trainer = Trainer(cfg)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/detectron2/engine/defaults.py", line 376, in __init__
+    model = self.build_model(cfg)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/detectron2/engine/defaults.py", line 505, in build_model
+    model = build_model(cfg)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/detectron2/modeling/meta_arch/build.py", line 23, in build_model
+    model.to(torch.device(cfg.MODEL.DEVICE))
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 688, in _apply
+    self._buffers[key] = fn(buf)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/nn/modules/module.py", line 987, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+KeyboardInterrupt

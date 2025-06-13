@@ -1,0 +1,52 @@
+{
+  "os": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.18",
+  "startedAt": "2025-06-12T01:08:45.757024Z",
+  "args": [
+    "--num-gpus",
+    "1",
+    "--config-file",
+    "configs/dvis_Plus/HybridOR/CTVIS_r50.yaml",
+    "--eval-only",
+    "MODEL.WEIGHTS",
+    "checkpoints/ctvis_r50_vspw.pth"
+  ],
+  "program": "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py",
+  "codePath": "panoptic_segmentation/train_net_video.py",
+  "git": {
+    "remote": "https://github.com/egeozsoy/MM-OR.git",
+    "commit": "5896e26925f50d879f2ec19f3dada7f21dda016a"
+  },
+  "email": "bmurphy4012@gmail.com",
+  "root": "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation",
+  "host": "connecteve",
+  "executable": "/home/connecteve/miniconda3/envs/mm-or/bin/python",
+  "codePathLocal": "train_net_video.py",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1967317549056",
+      "used": "296974061568"
+    }
+  },
+  "memory": {
+    "total": "67124629504"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "memoryTotal": "17171480576",
+      "cudaCores": 10240,
+      "architecture": "Ada",
+      "uuid": "GPU-1c99e359-41d7-f190-49e1-f2ef998c4ee5"
+    }
+  ],
+  "cudaVersion": "12.9"
+}

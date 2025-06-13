@@ -1,0 +1,7 @@
+{"time":"2025-06-11T17:13:15.358039597+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/wandb/run-20250611_171315-u5p93cys/logs/debug-core.log"}
+{"time":"2025-06-11T17:13:15.659949368+09:00","level":"INFO","msg":"stream: created new stream","id":"u5p93cys"}
+{"time":"2025-06-11T17:13:15.659966283+09:00","level":"INFO","msg":"stream: started","id":"u5p93cys"}
+{"time":"2025-06-11T17:13:15.660063454+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"u5p93cys"}
+{"time":"2025-06-11T17:13:15.66012327+09:00","level":"INFO","msg":"handler: started","stream_id":"u5p93cys"}
+{"time":"2025-06-11T17:13:15.660138122+09:00","level":"INFO","msg":"sender: started","stream_id":"u5p93cys"}
+{"time":"2025-06-11T17:13:16.012393049+09:00","level":"INFO","msg":"Starting system monitor"}

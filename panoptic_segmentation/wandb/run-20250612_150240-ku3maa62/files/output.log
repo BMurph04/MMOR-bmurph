@@ -1,0 +1,1186 @@
+Frequency file exists. Using weights from frequency file
+Using no loss weighting...
+[32m[06/12 15:02:41 d2.engine.defaults]: [0mModel:
+CTMinVIS(
+  (backbone): ResNet(
+    (stem): BasicStem(
+      (conv1): Conv2d(
+        3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False
+        (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+      )
+    )
+    (res2): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+    )
+    (res3): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+    )
+    (res4): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (4): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (5): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+    )
+    (res5): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+    )
+  )
+  (sem_seg_head): MaskFormerHead(
+    (pixel_decoder): MSDeformAttnPixelDecoder(
+      (input_proj): ModuleList(
+        (0): Sequential(
+          (0): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (1): Sequential(
+          (0): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+        (2): Sequential(
+          (0): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
+          (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+        )
+      )
+      (transformer): MSDeformAttnTransformerEncoderOnly(
+        (encoder): MSDeformAttnTransformerEncoder(
+          (layers): ModuleList(
+            (0): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+            (1): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+            (2): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+            (3): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+            (4): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+            (5): MSDeformAttnTransformerEncoderLayer(
+              (self_attn): MSDeformAttn(
+                (sampling_offsets): Linear(in_features=256, out_features=192, bias=True)
+                (attention_weights): Linear(in_features=256, out_features=96, bias=True)
+                (value_proj): Linear(in_features=256, out_features=256, bias=True)
+                (output_proj): Linear(in_features=256, out_features=256, bias=True)
+              )
+              (dropout1): Dropout(p=0.0, inplace=False)
+              (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (linear1): Linear(in_features=256, out_features=1024, bias=True)
+              (dropout2): Dropout(p=0.0, inplace=False)
+              (linear2): Linear(in_features=1024, out_features=256, bias=True)
+              (dropout3): Dropout(p=0.0, inplace=False)
+              (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+        )
+      )
+      (pe_layer): Positional encoding PositionEmbeddingSine
+          num_pos_feats: 128
+          temperature: 10000
+          normalize: True
+          scale: 6.283185307179586
+      (mask_features): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (adapter_1): Conv2d(
+        256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+      (layer_1): Conv2d(
+        256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+        (norm): GroupNorm(32, 256, eps=1e-05, affine=True)
+      )
+    )
+    (predictor): VideoMultiScaleMaskedTransformerDecoder_dvisPlus(
+      (pe_layer): Positional encoding PositionEmbeddingSine
+          num_pos_feats: 128
+          temperature: 10000
+          normalize: True
+          scale: 6.283185307179586
+      (transformer_self_attention_layers): ModuleList(
+        (0): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (1): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (2): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (3): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (4): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (5): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (6): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (7): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (8): SelfAttentionLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+      )
+      (transformer_cross_attention_layers): ModuleList(
+        (0): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (1): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (2): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (3): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (4): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (5): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (6): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (7): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (8): CrossAttentionLayer(
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+      )
+      (transformer_ffn_layers): ModuleList(
+        (0): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): FFNLayer(
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (decoder_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (query_feat): Embedding(100, 256)
+      (query_embed): Embedding(100, 256)
+      (level_embed): Embedding(3, 256)
+      (input_proj): ModuleList(
+        (0): Sequential()
+        (1): Sequential()
+        (2): Sequential()
+      )
+      (class_embed): Linear(in_features=256, out_features=125, bias=True)
+      (mask_embed): MLP(
+        (layers): ModuleList(
+          (0): Linear(in_features=256, out_features=256, bias=True)
+          (1): Linear(in_features=256, out_features=256, bias=True)
+          (2): Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+      (reid_embed): MLP(
+        (layers): ModuleList(
+          (0): Linear(in_features=256, out_features=256, bias=True)
+          (1): Linear(in_features=256, out_features=256, bias=True)
+          (2): Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+    )
+  )
+  (criterion): Criterion VideoSetCriterion
+      matcher: Matcher VideoHungarianMatcher
+          cost_class: 2.0
+          cost_mask: 5.0
+          cost_dice: 5.0
+      losses: ['labels', 'masks']
+      weight_dict: {'loss_ce': 2.0, 'loss_mask': 5.0, 'loss_dice': 5.0, 'loss_ce_0': 2.0, 'loss_mask_0': 5.0, 'loss_dice_0': 5.0, 'loss_ce_1': 2.0, 'loss_mask_1': 5.0, 'loss_dice_1': 5.0, 'loss_ce_2': 2.0, 'loss_mask_2': 5.0, 'loss_dice_2': 5.0, 'loss_ce_3': 2.0, 'loss_mask_3': 5.0, 'loss_dice_3': 5.0, 'loss_ce_4': 2.0, 'loss_mask_4': 5.0, 'loss_dice_4': 5.0, 'loss_ce_5': 2.0, 'loss_mask_5': 5.0, 'loss_dice_5': 5.0, 'loss_ce_6': 2.0, 'loss_mask_6': 5.0, 'loss_dice_6': 5.0, 'loss_ce_7': 2.0, 'loss_mask_7': 5.0, 'loss_dice_7': 5.0, 'loss_ce_8': 2.0, 'loss_mask_8': 5.0, 'loss_dice_8': 5.0}
+      num_classes: 124
+      eos_coef: 0.1
+      num_points: 12544
+      oversample_ratio: 3.0
+      importance_sample_ratio: 0.75
+  (image_matcher): Matcher HungarianMatcher
+      cost_class: 2.0
+      cost_mask: 5.0
+      cost_dice: 5.0
+  (cl_plugin): CTCLPlugin()
+)
+[32m[06/12 15:02:41 fvcore.common.checkpoint]: [0m[Checkpointer] Loading from checkpoints/ctvis_r50_vspw.pth ...
+Loading samples: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 39/39 [00:01<00:00, 37.70it/s]
+[32m[06/12 15:02:42 d2.data.common]: [0mSerializing 72 elements to byte tensors and concatenating them all ...
+[32m[06/12 15:02:43 d2.data.common]: [0mSerialized dataset takes 14.05 MiB
+COCO Evaluator instantiated using config, this is deprecated behavior. Please pass in explicit arguments instead.
+[32m[06/12 15:02:43 d2.evaluation.evaluator]: [0mStart inference on 72 batches
+/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1670525541990/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+43
+34
+51
+89
+91
+37
+85
+[32m[06/12 15:03:07 d2.evaluation.evaluator]: [0mInference done 1/72. Dataloading: 0.1560 s/iter. Inference: 17.9274 s/iter. Eval: 6.5722 s/iter. Total: 24.6564 s/iter. ETA=0:29:10
+43
+34
+51
+91
+47
+28
+28
+[32m[06/12 15:03:30 d2.evaluation.evaluator]: [0mInference done 2/72. Dataloading: 0.1290 s/iter. Inference: 17.1411 s/iter. Eval: 6.5285 s/iter. Total: 23.7993 s/iter. ETA=0:27:45
+43
+34
+51
+85
+[32m[06/12 15:03:53 d2.evaluation.evaluator]: [0mInference done 3/72. Dataloading: 0.1236 s/iter. Inference: 16.9690 s/iter. Eval: 6.3764 s/iter. Total: 23.4696 s/iter. ETA=0:26:59
+43
+34
+51
+47
+91
+25
+[32m[06/12 15:04:16 d2.evaluation.evaluator]: [0mInference done 4/72. Dataloading: 0.0928 s/iter. Inference: 16.9938 s/iter. Eval: 6.3634 s/iter. Total: 23.4505 s/iter. ETA=0:26:34
+43
+51
+34
+28
+[32m[06/12 15:04:34 d2.evaluation.evaluator]: [0mInference done 5/72. Dataloading: 0.0746 s/iter. Inference: 16.9260 s/iter. Eval: 5.3342 s/iter. Total: 22.3354 s/iter. ETA=0:24:56
+43
+34
+37
+51
+36
+36
+31
+36
+36
+32
+36
+84
+37
+87
+43
+34
+28
+47
+47
+97
+[32m[06/12 15:04:54 d2.evaluation.evaluator]: [0mInference done 7/72. Dataloading: 0.0002 s/iter. Inference: 8.9746 s/iter. Eval: 0.7611 s/iter. Total: 9.7360 s/iter. ETA=0:10:32
+43
+34
+91
+28
+97
+[32m[06/12 15:05:17 d2.evaluation.evaluator]: [0mInference done 8/72. Dataloading: 0.0262 s/iter. Inference: 11.4226 s/iter. Eval: 2.6668 s/iter. Total: 14.1158 s/iter. ETA=0:15:03
+43
+34
+47
+28
+[32m[06/12 15:05:40 d2.evaluation.evaluator]: [0mInference done 9/72. Dataloading: 0.0198 s/iter. Inference: 12.7941 s/iter. Eval: 3.5393 s/iter. Total: 16.3534 s/iter. ETA=0:17:10
+43
+34
+91
+28
+47
+[32m[06/12 15:06:03 d2.evaluation.evaluator]: [0mInference done 10/72. Dataloading: 0.0392 s/iter. Inference: 13.5536 s/iter. Eval: 4.1126 s/iter. Total: 17.7056 s/iter. ETA=0:18:17
+34
+43
+91
+47
+28
+[32m[06/12 15:06:26 d2.evaluation.evaluator]: [0mInference done 11/72. Dataloading: 0.0445 s/iter. Inference: 14.1521 s/iter. Eval: 4.4686 s/iter. Total: 18.6653 s/iter. ETA=0:18:58
+43
+34
+37
+72
+97
+32
+71
+37
+47
+43
+34
+51
+37
+91
+85
+[32m[06/12 15:06:51 d2.evaluation.evaluator]: [0mInference done 13/72. Dataloading: 0.0334 s/iter. Inference: 12.8875 s/iter. Eval: 4.2230 s/iter. Total: 17.1441 s/iter. ETA=0:16:51
+43
+34
+85
+25
+[32m[06/12 15:07:14 d2.evaluation.evaluator]: [0mInference done 14/72. Dataloading: 0.0298 s/iter. Inference: 13.2952 s/iter. Eval: 4.4574 s/iter. Total: 17.7826 s/iter. ETA=0:17:11
+34
+43
+25
+51
+[32m[06/12 15:07:37 d2.evaluation.evaluator]: [0mInference done 15/72. Dataloading: 0.0270 s/iter. Inference: 13.5929 s/iter. Eval: 4.6361 s/iter. Total: 18.2563 s/iter. ETA=0:17:20
+34
+43
+72
+25
+[32m[06/12 15:08:00 d2.evaluation.evaluator]: [0mInference done 16/72. Dataloading: 0.0399 s/iter. Inference: 13.8361 s/iter. Eval: 4.7960 s/iter. Total: 18.6722 s/iter. ETA=0:17:25
+43
+34
+51
+28
+[32m[06/12 15:08:22 d2.evaluation.evaluator]: [0mInference done 17/72. Dataloading: 0.0366 s/iter. Inference: 14.0192 s/iter. Eval: 4.9219 s/iter. Total: 18.9781 s/iter. ETA=0:17:23
+34
+43
+37
+51
+25
+72
+25
+87
+25
+35
+97
+31
+36
+43
+34
+47
+72
+[32m[06/12 15:08:48 d2.evaluation.evaluator]: [0mInference done 19/72. Dataloading: 0.0385 s/iter. Inference: 13.3664 s/iter. Eval: 4.6821 s/iter. Total: 18.0874 s/iter. ETA=0:15:58
+43
+34
+47
+36
+48
+28
+37
+[32m[06/12 15:09:11 d2.evaluation.evaluator]: [0mInference done 20/72. Dataloading: 0.0361 s/iter. Inference: 13.6066 s/iter. Eval: 4.7761 s/iter. Total: 18.4191 s/iter. ETA=0:15:57
+43
+34
+91
+35
+[32m[06/12 15:09:33 d2.evaluation.evaluator]: [0mInference done 21/72. Dataloading: 0.0339 s/iter. Inference: 13.8035 s/iter. Eval: 4.8599 s/iter. Total: 18.6975 s/iter. ETA=0:15:53
+43
+34
+97
+36
+28
+28
+35
+[32m[06/12 15:09:57 d2.evaluation.evaluator]: [0mInference done 22/72. Dataloading: 0.0320 s/iter. Inference: 13.9746 s/iter. Eval: 4.9472 s/iter. Total: 18.9542 s/iter. ETA=0:15:47
+43
+34
+35
+47
+84
+28
+28
+[32m[06/12 15:10:19 d2.evaluation.evaluator]: [0mInference done 23/72. Dataloading: 0.0303 s/iter. Inference: 14.1197 s/iter. Eval: 5.0192 s/iter. Total: 19.1696 s/iter. ETA=0:15:39
+43
+34
+36
+35
+97
+[32m[06/12 15:10:42 d2.evaluation.evaluator]: [0mInference done 24/72. Dataloading: 0.0342 s/iter. Inference: 14.2316 s/iter. Eval: 5.0817 s/iter. Total: 19.3479 s/iter. ETA=0:15:28
+43
+34
+25
+84
+28
+51
+91
+48
+25
+28
+[32m[06/12 15:11:04 d2.evaluation.evaluator]: [0mInference done 25/72. Dataloading: 0.0325 s/iter. Inference: 14.3427 s/iter. Eval: 5.1260 s/iter. Total: 19.5017 s/iter. ETA=0:15:16
+43
+34
+28
+[32m[06/12 15:11:27 d2.evaluation.evaluator]: [0mInference done 26/72. Dataloading: 0.0369 s/iter. Inference: 14.4232 s/iter. Eval: 5.1732 s/iter. Total: 19.6338 s/iter. ETA=0:15:03
+43
+34
+52
+28
+35
+[32m[06/12 15:11:49 d2.evaluation.evaluator]: [0mInference done 27/72. Dataloading: 0.0392 s/iter. Inference: 14.5173 s/iter. Eval: 5.2068 s/iter. Total: 19.7638 s/iter. ETA=0:14:49
+43
+34
+28
+28
+28
+51
+[32m[06/12 15:12:12 d2.evaluation.evaluator]: [0mInference done 28/72. Dataloading: 0.0375 s/iter. Inference: 14.6201 s/iter. Eval: 5.2447 s/iter. Total: 19.9028 s/iter. ETA=0:14:35
+43
+34
+28
+28
+[32m[06/12 15:12:35 d2.evaluation.evaluator]: [0mInference done 29/72. Dataloading: 0.0360 s/iter. Inference: 14.7161 s/iter. Eval: 5.2828 s/iter. Total: 20.0354 s/iter. ETA=0:14:21
+43
+34
+51
+36
+55
+25
+[32m[06/12 15:12:58 d2.evaluation.evaluator]: [0mInference done 30/72. Dataloading: 0.0346 s/iter. Inference: 14.7881 s/iter. Eval: 5.3144 s/iter. Total: 20.1376 s/iter. ETA=0:14:05
+43
+34
+47
+51
+51
+28
+[32m[06/12 15:13:12 d2.evaluation.evaluator]: [0mInference done 31/72. Dataloading: 0.0334 s/iter. Inference: 14.6127 s/iter. Eval: 5.2473 s/iter. Total: 19.8939 s/iter. ETA=0:13:35
+43
+34
+25
+25
+51
+51
+25
+28
+36
+[32m[06/12 15:13:35 d2.evaluation.evaluator]: [0mInference done 32/72. Dataloading: 0.0358 s/iter. Inference: 14.7034 s/iter. Eval: 5.2819 s/iter. Total: 20.0216 s/iter. ETA=0:13:20
+43
+34
+28
+28
+25
+28
+36
+28
+[32m[06/12 15:13:58 d2.evaluation.evaluator]: [0mInference done 33/72. Dataloading: 0.0345 s/iter. Inference: 14.7737 s/iter. Eval: 5.3108 s/iter. Total: 20.1194 s/iter. ETA=0:13:04
+43
+34
+51
+28
+36
+25
+28
+28
+[32m[06/12 15:14:21 d2.evaluation.evaluator]: [0mInference done 34/72. Dataloading: 0.0375 s/iter. Inference: 14.8363 s/iter. Eval: 5.3411 s/iter. Total: 20.2154 s/iter. ETA=0:12:48
+43
+34
+51
+91
+36
+28
+36
+25
+51
+[32m[06/12 15:14:44 d2.evaluation.evaluator]: [0mInference done 35/72. Dataloading: 0.0465 s/iter. Inference: 14.8863 s/iter. Eval: 5.3728 s/iter. Total: 20.3061 s/iter. ETA=0:12:31
+43
+34
+28
+93
+36
+25
+51
+51
+[32m[06/12 15:15:06 d2.evaluation.evaluator]: [0mInference done 36/72. Dataloading: 0.0451 s/iter. Inference: 14.9323 s/iter. Eval: 5.4042 s/iter. Total: 20.3821 s/iter. ETA=0:12:13
+43
+34
+28
+36
+25
+25
+25
+[32m[06/12 15:15:29 d2.evaluation.evaluator]: [0mInference done 37/72. Dataloading: 0.0437 s/iter. Inference: 14.9891 s/iter. Eval: 5.4274 s/iter. Total: 20.4607 s/iter. ETA=0:11:56
+43
+34
+51
+25
+25
+36
+28
+[32m[06/12 15:15:52 d2.evaluation.evaluator]: [0mInference done 38/72. Dataloading: 0.0424 s/iter. Inference: 15.0393 s/iter. Eval: 5.4507 s/iter. Total: 20.5329 s/iter. ETA=0:11:38
+43
+34
+51
+36
+25
+28
+25
+25
+36
+[32m[06/12 15:16:15 d2.evaluation.evaluator]: [0mInference done 39/72. Dataloading: 0.0412 s/iter. Inference: 15.0901 s/iter. Eval: 5.4692 s/iter. Total: 20.6010 s/iter. ETA=0:11:19
+43
+34
+51
+36
+25
+36
+36
+25
+[32m[06/12 15:16:38 d2.evaluation.evaluator]: [0mInference done 40/72. Dataloading: 0.0426 s/iter. Inference: 15.1406 s/iter. Eval: 5.4897 s/iter. Total: 20.6734 s/iter. ETA=0:11:01
+43
+34
+51
+91
+25
+[32m[06/12 15:17:01 d2.evaluation.evaluator]: [0mInference done 41/72. Dataloading: 0.0414 s/iter. Inference: 15.1954 s/iter. Eval: 5.5113 s/iter. Total: 20.7487 s/iter. ETA=0:10:43
+43
+34
+91
+36
+25
+25
+92
+25
+28
+25
+[32m[06/12 15:17:19 d2.evaluation.evaluator]: [0mInference done 42/72. Dataloading: 0.0443 s/iter. Inference: 15.1356 s/iter. Eval: 5.4909 s/iter. Total: 20.6713 s/iter. ETA=0:10:20
+43
+34
+28
+47
+47
+47
+91
+97
+[32m[06/12 15:17:42 d2.evaluation.evaluator]: [0mInference done 43/72. Dataloading: 0.0456 s/iter. Inference: 15.1812 s/iter. Eval: 5.5113 s/iter. Total: 20.7386 s/iter. ETA=0:10:01
+34
+43
+28
+48
+25
+[32m[06/12 15:18:05 d2.evaluation.evaluator]: [0mInference done 44/72. Dataloading: 0.0445 s/iter. Inference: 15.2209 s/iter. Eval: 5.5250 s/iter. Total: 20.7909 s/iter. ETA=0:09:42
+43
+34
+47
+28
+28
+[32m[06/12 15:18:28 d2.evaluation.evaluator]: [0mInference done 45/72. Dataloading: 0.0434 s/iter. Inference: 15.2537 s/iter. Eval: 5.5357 s/iter. Total: 20.8334 s/iter. ETA=0:09:22
+43
+34
+28
+48
+47
+28
+91
+[32m[06/12 15:18:39 d2.evaluation.evaluator]: [0mInference done 46/72. Dataloading: 0.0424 s/iter. Inference: 15.0820 s/iter. Eval: 5.4696 s/iter. Total: 20.5945 s/iter. ETA=0:08:55
+43
+34
+37
+91
+28
+28
+28
+[32m[06/12 15:19:02 d2.evaluation.evaluator]: [0mInference done 47/72. Dataloading: 0.0414 s/iter. Inference: 15.1291 s/iter. Eval: 5.4917 s/iter. Total: 20.6627 s/iter. ETA=0:08:36
+43
+34
+91
+[32m[06/12 15:19:26 d2.evaluation.evaluator]: [0mInference done 48/72. Dataloading: 0.0427 s/iter. Inference: 15.1676 s/iter. Eval: 5.5159 s/iter. Total: 20.7267 s/iter. ETA=0:08:17
+34
+43
+91
+25
+[32m[06/12 15:19:48 d2.evaluation.evaluator]: [0mInference done 49/72. Dataloading: 0.0418 s/iter. Inference: 15.1937 s/iter. Eval: 5.5330 s/iter. Total: 20.7690 s/iter. ETA=0:07:57
+43
+34
+28
+91
+37
+[32m[06/12 15:20:00 d2.evaluation.evaluator]: [0mInference done 50/72. Dataloading: 0.0419 s/iter. Inference: 15.0471 s/iter. Eval: 5.4794 s/iter. Total: 20.5690 s/iter. ETA=0:07:32
+43
+34
+25
+28
+28
+25
+[32m[06/12 15:20:23 d2.evaluation.evaluator]: [0mInference done 51/72. Dataloading: 0.0426 s/iter. Inference: 15.0769 s/iter. Eval: 5.4954 s/iter. Total: 20.6155 s/iter. ETA=0:07:12
+43
+34
+36
+84
+25
+25
+97
+[32m[06/12 15:20:46 d2.evaluation.evaluator]: [0mInference done 52/72. Dataloading: 0.0417 s/iter. Inference: 15.1095 s/iter. Eval: 5.5137 s/iter. Total: 20.6655 s/iter. ETA=0:06:53
+43
+34
+36
+36
+84
+25
+28
+[32m[06/12 15:21:09 d2.evaluation.evaluator]: [0mInference done 53/72. Dataloading: 0.0408 s/iter. Inference: 15.1440 s/iter. Eval: 5.5273 s/iter. Total: 20.7127 s/iter. ETA=0:06:33
+43
+34
+36
+25
+28
+91
+97
+54
+[32m[06/12 15:21:20 d2.evaluation.evaluator]: [0mInference done 54/72. Dataloading: 0.0400 s/iter. Inference: 15.0127 s/iter. Eval: 5.4797 s/iter. Total: 20.5330 s/iter. ETA=0:06:09
+43
+34
+36
+47
+25
+97
+[32m[06/12 15:21:43 d2.evaluation.evaluator]: [0mInference done 55/72. Dataloading: 0.0392 s/iter. Inference: 15.0383 s/iter. Eval: 5.4961 s/iter. Total: 20.5743 s/iter. ETA=0:05:49
+43
+34
+36
+49
+36
+28
+25
+[32m[06/12 15:22:06 d2.evaluation.evaluator]: [0mInference done 56/72. Dataloading: 0.0393 s/iter. Inference: 15.0621 s/iter. Eval: 5.5107 s/iter. Total: 20.6127 s/iter. ETA=0:05:29
+43
+34
+47
+28
+47
+28
+27
+52
+[32m[06/12 15:22:28 d2.evaluation.evaluator]: [0mInference done 57/72. Dataloading: 0.0386 s/iter. Inference: 15.0840 s/iter. Eval: 5.5196 s/iter. Total: 20.6427 s/iter. ETA=0:05:09
+43
+34
+47
+52
+51
+28
+[32m[06/12 15:22:51 d2.evaluation.evaluator]: [0mInference done 58/72. Dataloading: 0.0431 s/iter. Inference: 15.1045 s/iter. Eval: 5.5359 s/iter. Total: 20.6840 s/iter. ETA=0:04:49
+34
+43
+28
+28
+28
+25
+[32m[06/12 15:23:13 d2.evaluation.evaluator]: [0mInference done 59/72. Dataloading: 0.0440 s/iter. Inference: 15.1264 s/iter. Eval: 5.5517 s/iter. Total: 20.7227 s/iter. ETA=0:04:29
+43
+34
+25
+37
+51
+84
+51
+[32m[06/12 15:23:36 d2.evaluation.evaluator]: [0mInference done 60/72. Dataloading: 0.0432 s/iter. Inference: 15.1446 s/iter. Eval: 5.5624 s/iter. Total: 20.7508 s/iter. ETA=0:04:09
+43
+34
+89
+28
+91
+37
+[32m[06/12 15:23:58 d2.evaluation.evaluator]: [0mInference done 61/72. Dataloading: 0.0425 s/iter. Inference: 15.1590 s/iter. Eval: 5.5781 s/iter. Total: 20.7802 s/iter. ETA=0:03:48
+34
+43
+91
+28
+28
+[32m[06/12 15:24:21 d2.evaluation.evaluator]: [0mInference done 62/72. Dataloading: 0.0417 s/iter. Inference: 15.1851 s/iter. Eval: 5.5878 s/iter. Total: 20.8152 s/iter. ETA=0:03:28
+34
+43
+28
+28
+91
+[32m[06/12 15:24:44 d2.evaluation.evaluator]: [0mInference done 63/72. Dataloading: 0.0410 s/iter. Inference: 15.2067 s/iter. Eval: 5.5999 s/iter. Total: 20.8481 s/iter. ETA=0:03:07
+43
+34
+37
+91
+28
+[32m[06/12 15:25:06 d2.evaluation.evaluator]: [0mInference done 64/72. Dataloading: 0.0423 s/iter. Inference: 15.2287 s/iter. Eval: 5.6078 s/iter. Total: 20.8793 s/iter. ETA=0:02:47
+34
+43
+[32m[06/12 15:25:29 d2.evaluation.evaluator]: [0mInference done 65/72. Dataloading: 0.0416 s/iter. Inference: 15.2494 s/iter. Eval: 5.6154 s/iter. Total: 20.9069 s/iter. ETA=0:02:26
+34
+43
+91
+36
+28
+28
+28
+28
+[32m[06/12 15:25:43 d2.evaluation.evaluator]: [0mInference done 66/72. Dataloading: 0.0426 s/iter. Inference: 15.1660 s/iter. Eval: 5.5812 s/iter. Total: 20.7904 s/iter. ETA=0:02:04
+43
+34
+37
+[32m[06/12 15:26:06 d2.evaluation.evaluator]: [0mInference done 67/72. Dataloading: 0.0428 s/iter. Inference: 15.1930 s/iter. Eval: 5.5920 s/iter. Total: 20.8284 s/iter. ETA=0:01:44
+43
+34
+84
+91
+49
+[32m[06/12 15:26:29 d2.evaluation.evaluator]: [0mInference done 68/72. Dataloading: 0.0421 s/iter. Inference: 15.2190 s/iter. Eval: 5.6089 s/iter. Total: 20.8706 s/iter. ETA=0:01:23
+43
+34
+36
+84
+51
+[32m[06/12 15:26:52 d2.evaluation.evaluator]: [0mInference done 69/72. Dataloading: 0.0415 s/iter. Inference: 15.2344 s/iter. Eval: 5.6228 s/iter. Total: 20.8992 s/iter. ETA=0:01:02
+43
+34
+36
+84
+27
+28
+[32m[06/12 15:27:14 d2.evaluation.evaluator]: [0mInference done 70/72. Dataloading: 0.0409 s/iter. Inference: 15.2506 s/iter. Eval: 5.6301 s/iter. Total: 20.9221 s/iter. ETA=0:00:41
+43
+34
+36
+51
+25
+51
+[32m[06/12 15:27:37 d2.evaluation.evaluator]: [0mInference done 71/72. Dataloading: 0.0403 s/iter. Inference: 15.2657 s/iter. Eval: 5.6371 s/iter. Total: 20.9436 s/iter. ETA=0:00:20
+43
+34
+84
+37
+72
+37
+51
+87
+47
+27
+97
+[32m[06/12 15:27:40 d2.evaluation.evaluator]: [0mTotal inference time: 0:23:05.492913 (20.678999 s / iter per device, on 1 devices)
+[32m[06/12 15:27:40 d2.evaluation.evaluator]: [0mTotal inference pure compute time: 0:16:49 (15.072915 s / iter per device, on 1 devices)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [23:36<00:00, 19.67s/it]
+==> 15-frame vpq_stat: 1417.8540592193604 sec
+{'test_VPQ/__background___PQ': 0.0, 'test_Prec/__background__': 0.0, 'test_Rec/__background__': 0, 'test_VPQ/instrument_table_PQ': 0.0, 'test_Prec/instrument_table': 0, 'test_Rec/instrument_table': 0.0, 'test_VPQ/ae_PQ': 0.0, 'test_Prec/ae': 0.0, 'test_Rec/ae': 0.0, 'test_VPQ/ot_PQ': 0.0, 'test_Prec/ot': 0, 'test_Rec/ot': 0.0, 'test_VPQ/mps_station_PQ': 0.0, 'test_Prec/mps_station': 0, 'test_Rec/mps_station': 0.0, 'test_VPQ/patient_PQ': 0.0, 'test_Prec/patient': 0, 'test_Rec/patient': 0.0, 'test_VPQ/drape_PQ': 0.0, 'test_Prec/drape': 0, 'test_Rec/drape': 0.0, 'test_VPQ/anest_PQ': 0.0, 'test_Prec/anest': 0, 'test_Rec/anest': 0.0, 'test_VPQ/circulator_PQ': 0.0, 'test_Prec/circulator': 0, 'test_Rec/circulator': 0.0, 'test_VPQ/assistant_surgeon_PQ': 0.0, 'test_Prec/assistant_surgeon': 0, 'test_Rec/assistant_surgeon': 0.0, 'test_VPQ/head_surgeon_PQ': 0.0, 'test_Prec/head_surgeon': 0, 'test_Rec/head_surgeon': 0.0, 'test_VPQ/mps_PQ': 0.0, 'test_Prec/mps': 0, 'test_Rec/mps': 0.0, 'test_VPQ/nurse_PQ': 0.0, 'test_Prec/nurse': 0, 'test_Rec/nurse': 0.0, 'test_VPQ/drill_PQ': 0.0, 'test_Prec/drill': 0, 'test_Rec/drill': 0.0, 'test_VPQ/hammer_PQ': 0.0, 'test_Prec/hammer': 0, 'test_Rec/hammer': 0.0, 'test_VPQ/saw_PQ': 0.0, 'test_Prec/saw': 0, 'test_Rec/saw': 0.0, 'test_VPQ/tracker_PQ': 0.0, 'test_Prec/tracker': 0, 'test_Rec/tracker': 0.0, 'test_VPQ/mako_robot_PQ': 0.0019211390343472125, 'test_Prec/mako_robot': 0.002916998143728454, 'test_Rec/mako_robot': 0.0028625954198473282, 'test_VPQ/monitor_PQ': 0.0, 'test_Prec/monitor': 0, 'test_Rec/monitor': 0.0, 'test_VPQ/c_arm_PQ': 0.0, 'test_Prec/c_arm': 0, 'test_Rec/c_arm': 0.0, 'test_VPQ/unrelated_person_PQ': 0.0, 'test_Prec/unrelated_person': 0, 'test_Rec/unrelated_person': 0.0, 'test_VPQ/student_PQ': 0.0, 'test_Prec/student': 0.0, 'test_Rec/student': 0.0, 'test_VPQ/secondary_table_PQ': 0.0, 'test_Prec/secondary_table': 0.0, 'test_Rec/secondary_table': 0.0, 'test_VPQ/cementer_PQ': 0.0, 'test_Prec/cementer': 0.0, 'test_Rec/cementer': 0.0}
+  0%|                                                                                                                                                        | 0/72 [18:56<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/multiprocessing/pool.py", line 856, in next
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py", line 414, in <module>
+    main(args)
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py", line 399, in main
+    res = Trainer.test(cfg, model)
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/train_net_video.py", line 305, in test
+    results_i = inference_on_dataset(model, data_loader, evaluator)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/detectron2/evaluation/evaluator.py", line 204, in inference_on_dataset
+    results = evaluator.evaluate()
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/dvis_Plus/data_video/vps_eval.py", line 346, in evaluate
+    vpq_all_, vpq_thing_, vpq_stuff_, results = vpq_compute_parallel(
+  File "/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/utils/eval_vpq_vspw.py", line 287, in vpq_compute_parallel
+    for tmp in tqdm(p.imap(partial(vpq_compute_single_core, categories, nframes), gt_pred_split, chunksize=max((len(gt_pred_split) // num_processes // 2), 1)), total=len(gt_pred_split)):
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/multiprocessing/pool.py", line 423, in <genexpr>
+    return (item for chunk in result for item in chunk)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/multiprocessing/pool.py", line 861, in next
+    self._cond.wait(timeout)
+  File "/home/connecteve/miniconda3/envs/mm-or/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt

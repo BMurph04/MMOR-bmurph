@@ -1,0 +1,16 @@
+{"time":"2025-06-13T10:46:40.857900697+09:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/connecteve/intern-brendon/MM-OR/panoptic_segmentation/wandb/run-20250613_104640-c0al3fb6/logs/debug-core.log"}
+{"time":"2025-06-13T10:46:41.169938256+09:00","level":"INFO","msg":"stream: created new stream","id":"c0al3fb6"}
+{"time":"2025-06-13T10:46:41.169999633+09:00","level":"INFO","msg":"stream: started","id":"c0al3fb6"}
+{"time":"2025-06-13T10:46:41.170007935+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T10:46:41.170087308+09:00","level":"INFO","msg":"handler: started","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T10:46:41.170090211+09:00","level":"INFO","msg":"sender: started","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T10:46:41.98588414+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-13T10:52:12.9036256+09:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bmurphy4012-massachusetts-institute-of-technology/MM-OR-SEG/c0al3fb6/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-06-13T11:22:16.202231659+09:00","level":"INFO","msg":"stream: closing","id":"c0al3fb6"}
+{"time":"2025-06-13T11:22:16.202262624+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-13T11:22:16.202297561+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-13T11:22:17.067946678+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-13T11:22:17.319890508+09:00","level":"INFO","msg":"handler: closed","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T11:22:17.319924663+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T11:22:17.319948376+09:00","level":"INFO","msg":"sender: closed","stream_id":"c0al3fb6"}
+{"time":"2025-06-13T11:22:17.31996917+09:00","level":"INFO","msg":"stream: closed","id":"c0al3fb6"}
